@@ -71,10 +71,10 @@ interface RoomListViewModelProps {
 }
 
 const filterKeyToIdMap: Map<FilterEnum, FilterId> = new Map([
+    [FilterEnum.FavouriteFilter, "favourite"],
     [FilterEnum.UnreadFilter, "unread"],
     [FilterEnum.PeopleFilter, "people"],
     [FilterEnum.RoomsFilter, "rooms"],
-    [FilterEnum.FavouriteFilter, "favourite"],
     [FilterEnum.MentionsFilter, "mentions"],
     [FilterEnum.InvitesFilter, "invites"],
     [FilterEnum.LowPriorityFilter, "low_priority"],

@@ -623,7 +623,7 @@ describe("RoomListViewModel", () => {
                 });
 
                 const { filterIds } = viewModel.getSnapshot();
-                expect(filterIds).toContain("favourite");
+                expect(filterIds[0]).toBe("favourite");
                 expect(filterIds).toContain("low_priority");
                 expect(filterIds).toContain("invites");
             });
